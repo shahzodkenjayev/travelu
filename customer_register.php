@@ -136,10 +136,10 @@ if (isset($_POST['register'])) {
                             <td align="right" id="fixm">Davlatingiz:</td>
                             <td>
                                 <select name="c_country" required="">Tanlang
-                                    <option>O'zbekiston</option>
+                                    <option>O\'zbekiston</option>
                                     <option>Rossiya</option> 
-                                    <option>Qozog'iston</option>
-                                    <option>Qirg'iziston</option>
+                                    <option>Qozog\'iston</option>
+                                    <option>Qirg\'iziston</option>
                                     <option>Tojikiston</option>
                                     <option>Turkmaniston</option>   
                                     <option>Bangladesh</option>
