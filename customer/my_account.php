@@ -7,18 +7,26 @@ include("functions/functions.php");
 
 <head>
     <meta charset="UTF-8">
-    <title>My Online Shop</title>
+    <title>Shahsiy kabinet</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css" media="all">
 </head>
 
 <body>
     <!--Main container starts here-->
-    <div class="main_wrapper">
-        <!--Header starts here-->
-        <div class="header_wrapper">
-            <a href="../index.php"><img id="logo" width="800" height="150" src="images/logo.png"></a>
-            <img id="banner" width="800" height="150" src="images/banner.jpg">
-        </div>
+    
+<div class="header_wrapper">
+    <a href="index.php"><img id="logo" width="200" height="200" src="images/logo1.jpg"></a>
+    <img id="banner" width="800" height="300" src="images/unitur.webp">
+
+    <!-- Bayroqlarni qo'shish -->
+    <div class="language_flags">
+        <a href="?lang=uz"><img src="images/flag_uzbek.png" alt="O'zbekcha"></a>
+        <a href="?lang=en"><img src="images/flag_english.png" alt="English"></a>
+        <a href="?lang=ru"><img src="images/flag_russian.png" alt="Русский"></a>
+        <a href="?lang=en"><img src="images/flag_turkey.png" alt="Turkey"></a>
+    </div>
+</div>
         <!--Header ends here-->
         <!--Navbar starts here-->
         <div class="menubar">
