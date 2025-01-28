@@ -33,7 +33,7 @@ body {
 	width: 1000px;
 	height: auto;
 	margin: auto;
-	background: #EEE0CB;
+	
 }
 .header_wrapper {
 	width: 1000px;
@@ -49,7 +49,7 @@ body {
 .menubar {
 	width: 1000px;
 	height: 50px;
-	background: gray;
+	
 	color: white;
 }
 #menu {
@@ -82,12 +82,12 @@ body {
 .content_wrapper {
 	width: 1000px;
 	margin: auto;
-	background: #EEE0CB;
+	
 }
 #content_area {
 	width: 800px;
 	float: right;
-	background: #EEE0CB;
+	
 }
 .sidebar {
 	width: 200px;
