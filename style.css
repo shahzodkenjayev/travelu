@@ -187,3 +187,167 @@ body {
         height: 25px;
     }
 }
+/* 4666x2769 ekrani uchun moslashgan CSS - Bu sizning asl holatingiz */
+@media (min-width: 4666px) and (min-height: 2769px) {
+    .main_wrapper {
+        width: 1000px;
+    }
+    .header_wrapper {
+        width: 1000px;
+    }
+    .menubar {
+        width: 1000px;
+    }
+    .content_wrapper {
+        width: 1000px;
+    }
+    #content_area {
+        width: 800px;
+    }
+    .sidebar {
+        width: 200px;
+    }
+}
+
+/* 1920x1080 yoki undan katta ekranlar uchun */
+@media (min-width: 1920px) {
+    .main_wrapper {
+        width: 90%; /* Ekran katta bo'lsa, kenglikni biroz qisqartiramiz */
+    }
+    .header_wrapper {
+        width: 90%;
+    }
+    .menubar {
+        width: 90%;
+    }
+    .content_wrapper {
+        width: 90%;
+    }
+    #content_area {
+        width: 70%;
+    }
+    .sidebar {
+        width: 20%;
+    }
+}
+
+/* 1366x768 ekranlar uchun */
+@media (max-width: 1366px) {
+    .main_wrapper {
+        width: 95%;
+    }
+    .header_wrapper {
+        width: 95%;
+    }
+    .menubar {
+        width: 95%;
+    }
+    .content_wrapper {
+        width: 95%;
+    }
+    #content_area {
+        width: 65%;
+    }
+    .sidebar {
+        width: 30%;
+    }
+}
+
+/* 1024x768 ekranlar uchun (planshet o'lchamiga yaqin) */
+@media (max-width: 1024px) {
+    .main_wrapper {
+        width: 100%;
+    }
+    .header_wrapper {
+        width: 100%;
+    }
+    .menubar {
+        width: 100%;
+    }
+    .content_wrapper {
+        width: 100%;
+    }
+    #content_area {
+        width: 100%;
+        float: none;
+    }
+    .sidebar {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* 768x480 ekranlar uchun (kichik ekranlar va mobil qurilmalar uchun) */
+@media (max-width: 768px) {
+    .main_wrapper {
+        width: 100%;
+    }
+    .header_wrapper {
+        width: 100%;
+    }
+    .menubar {
+        width: 100%;
+    }
+    .content_wrapper {
+        width: 100%;
+    }
+    #content_area {
+        width: 100%;
+        float: none;
+    }
+    .sidebar {
+        width: 100%;
+        float: none;
+    }
+    #menu a {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .language_flags {
+        top: 20px;
+        right: 10px;
+        gap: 8px;
+    }
+    .language_flags img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* 480x320 ekranlar uchun (mobil telefonlar uchun) */
+@media (max-width: 480px) {
+    .main_wrapper {
+        width: 100%;
+    }
+    .header_wrapper {
+        width: 100%;
+    }
+    .menubar {
+        width: 100%;
+    }
+    .content_wrapper {
+        width: 100%;
+    }
+    #content_area {
+        width: 100%;
+        float: none;
+    }
+    .sidebar {
+        width: 100%;
+        float: none;
+    }
+    #menu a {
+        font-size: 14px;
+        padding: 4px;
+    }
+    .language_flags {
+        top: 10px;
+        right: 5px;
+        gap: 5px;
+    }
+    .language_flags img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
