@@ -11,7 +11,7 @@
 <body id="body">
     <div class="main_wrapper">
         <div class="header_wrapper">
-            <h1 style="color: white;">Unitur bilan sayohat</h1>
+            
         </div>
         <div class="menubar">
             <ul id="menu">
