@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-    background-image: url('images/logo1.jpg'); /* Foni sifatida rasmni qo'ying */
+    background-image: url('pattern.jpg'); /* Foni sifatida rasmni qo'ying */
     background-size: cover; /* Rasmni to'liq qoplash uchun */
     background-position: center; /* Rasmni markazga joylashtirish */
     background-repeat: no-repeat; /* Rasmni takrorlanmasligi uchun */
@@ -33,7 +33,7 @@ body {
 	width: 1000px;
 	height: auto;
 	margin: auto;
-	background: #EEE0CB;
+	
 }
 .header_wrapper {
 	width: 1000px;
@@ -49,7 +49,7 @@ body {
 .menubar {
 	width: 1000px;
 	height: 50px;
-	background: gray;
+	
 	color: white;
 }
 #menu {
@@ -82,25 +82,25 @@ body {
 .content_wrapper {
 	width: 1000px;
 	margin: auto;
-	background: #EEE0CB;
+	
 }
 #content_area {
 	width: 800px;
 	float: right;
-	background: #EEE0CB;
+	
 }
 .sidebar {
 	width: 200px;
-	background-image: url('images/logo.webp'); /* Rasm manzilini yozing */
+	background-image: url('pattern/jpg'); /* Rasm manzilini yozing */
 	background-size: cover; /* Rasm sidebarni to‘liq qoplashi uchun */
 	background-repeat: no-repeat; /* Rasmni takrorlashni o‘chiradi */
 	background-position: center; /* Rasmni markazlash */
 	float: left;
-	background: #EEE0CB;
+	
 
 }
 #sidebar_title {
-	background: #EEE0CB;
+	
 	color: rgb(153, 191, 70);
 	font-size: 22px;
 	font-family: Arial;
@@ -145,7 +145,7 @@ body {
 #shopping_cart {
 	width: 800px;
 	height: 50px;
-	background: #EEE0CB;
+	
 	color: white;
 }
 
@@ -155,7 +155,7 @@ body {
 }
 
 #footer {
-    background-color: #EEE0CB;
+    
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid #ddd;
@@ -180,4 +180,10 @@ body {
 
 .language_flags a img:hover {
     transform: scale(1.1); /* Hover paytida kattalashish */
+}
+@media (max-width: 768px) {
+    .language_flags img {
+        width: 25px;
+        height: 25px;
+    }
 }
