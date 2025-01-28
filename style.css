@@ -181,3 +181,10 @@ body {
 .language_flags a img:hover {
     transform: scale(1.1); /* Hover paytida kattalashish */
 }
+@media (max-width: 768px) {
+    .language_flags img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
