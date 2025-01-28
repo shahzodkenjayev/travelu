@@ -17,7 +17,7 @@ include("functions/functions.php");
         <!--Header starts here-->
         <div class="header_wrapper">
             <a href="../index.php"><img id="logo" width="800" height="150" src="images/logo.png"></a>
-            <img id="banner" width="800" height="150" src="images/banner.jpg">
+            <img id="banner" width="800" height="150" src="images/banner.webp">
         </div>
         <!--Header ends here-->
         <!--Navbar starts here-->
