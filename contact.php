@@ -57,7 +57,7 @@
                 <div id="sidebar_title"><b>Biz bilan bog'laning</b></div>
                 <br><br><br><br><br><br><br>
                 <div id="sidebar_title"><b>24/7 Yordam liniyasi</b></div>
-                <div id="sidebar_title"><b>Telefon: 16505</b></div>
+                <div id="sidebar_title"><b>Telefon: +99878-777-11-11</b></div>
             </div>
             <div id="content_area">
                 <div id="packages_box">
@@ -104,13 +104,13 @@
 
                     <br><br><br>
                     <h3 style="font-family: Cambria;">Bosh Ofis:</h3>
-                    <p id="headoff"><b>Manzil: </b>221B Baker Street, London, UK.<br>
-                        <b>Aloqa: </b>123456789
+                    <p id="headoff"><b>Manzil: </b>Toshkent sh . Bektemir t. Husayn Bayqaro 117-uy.<br>
+                        <b>Aloqa: </b>+99878-777-11-11
                     </p>
                     <br>
                     <h4 style="font-family: Cambria;">Mintaqaviy Ofis:</h4>
-                    <p id="regoff"><b>Manzil: </b>102 Stadium Market, Gulistan, Dhaka, Bangladesh<br>
-                        <b>Aloqa: </b>0987654321
+                    <p id="regoff"><b>Manzil: </b>Toshkent sh . Bektemir t. Husayn Bayqaro 117-uy.<br>
+                        <b>Aloqa: </b>+99878-777-11-11
                     </p>
                 </div>
             </div>
