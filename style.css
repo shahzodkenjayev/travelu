@@ -100,7 +100,7 @@ body {
 
 }
 #sidebar_title {
-	background: #EEE0CB;
+	
 	color: rgb(153, 191, 70);
 	font-size: 22px;
 	font-family: Arial;
@@ -145,7 +145,7 @@ body {
 #shopping_cart {
 	width: 800px;
 	height: 50px;
-	background: #EEE0CB;
+	
 	color: white;
 }
 
@@ -155,7 +155,7 @@ body {
 }
 
 #footer {
-    background-color: #EEE0CB;
+    
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid #ddd;
