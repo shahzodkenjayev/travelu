@@ -165,7 +165,7 @@ body {
     display: flex;
     position: absolute; /* Sahifada har doim bir joyda turish uchun */
     top: 220px; /* Sahifaning yuqorisidan 50px bo'shliq */
-    right: 135px; /* Sahifaning o'ng tomonidan 10px bo'shliq */
+    right: 100px; /* Sahifaning o'ng tomonidan 10px bo'shliq */
     justify-content: flex-end; /* O'ngga joylashtirish */
     align-items: center; /* Vertikal markazlashtirish */
     gap: 10px; /* Bayroqlar orasidagi bo'shliq */
