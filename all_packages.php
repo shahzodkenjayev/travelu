@@ -2,31 +2,31 @@
 include("functions/functions.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
-    <title>Travel Bird : All Packages</title>
+    <title>Travel Bird : Barcha Paketlar</title>
     <link rel="stylesheet" href="styles/style.css" media="all">
 </head>
 <body>
-    <!--Main container starts here-->
+    <!--Asosiy konteyner bu yerda boshlanadi-->
     <div class="main_wrapper">
-        <!--Header starts here-->
+        <!--Sarlavha bu yerda boshlanadi-->
         <?php include 'includes/header.php'; ?>
-        <!--Header ends here-->
-        <!--Navbar starts here-->
+        <!--Sarlavha bu yerda tugaydi-->
+        <!--Navigatsiya paneli bu yerda boshlanadi-->
         <?php include 'includes/navbar.php'; ?>
-        <!--Navbar ends here-->
-        <!--Content starts here-->
+        <!--Navigatsiya paneli bu yerda tugaydi-->
+        <!--Kontent bu yerda boshlanadi-->
         <div class="content_wrapper">
-            <!--left-sidebar starts-->
+            <!--Chap tomondagi panel boshlanadi-->
             <?php include "includes/left-sidebar.php"; ?>
-            <!--left-sidebar ends-->
+            <!--Chap tomondagi panel tugaydi-->
             <div id="content_area">
                 <div id="shopping_cart">
-                    <span style="float: right;font-size: 18px;padding: 5px;line-height: 40px;">Welcome Guest! <b
-                                style="color: yellow;">Shopping Cart-</b> Total Items: Total Price: <a href="cart.php"
-                                                                                                       style="color: yellow;">Go to Cart</a></b></span>
+                    <span style="float: right;font-size: 18px;padding: 5px;line-height: 40px;">Xush kelibsiz Mehmon! <b
+                                style="color: yellow;">Savatcha-</b> Jami mahsulotlar: Jami narx: <a href="cart.php"
+                                                                                                       style="color: yellow;">Savatchaga o'tish</a></b></span>
                 </div>
                 <div id="packages_box">
                     <?php
@@ -46,9 +46,9 @@ include("functions/functions.php");
                         <div id='single_package'>
                         <h3 style='font-family: Cambria; margin-bottom: 2px;'>$pack_title</h3>
                         <img src='admin_area/package_images/$pack_image' width='180' height='180'>
-                        <p><b> Cost $ $pack_price</b></p>
-                        <a href='details.php?pack_id=$pack_id' style='float: left; font-size:18px;text-decoration: none;'>Details</a>
-                        <a href='index.php?pack_id=$pack_id'><button style='float: right; font-size:14px; cursor: pointer; padding: 2px 4px;'>Book</button></a>
+                        <p><b> Narx: $ $pack_price</b></p>
+                        <a href='details.php?pack_id=$pack_id' style='float: left; font-size:18px;text-decoration: none;'>Tafsilotlar</a>
+                        <a href='index.php?pack_id=$pack_id'><button style='float: right; font-size:14px; cursor: pointer; padding: 2px 4px;'>Buyurtma berish</button></a>
                         </div>
                         ";
                     }
@@ -56,11 +56,11 @@ include("functions/functions.php");
                 </div>
             </div>
         </div>
-        <!--Content ends here-->
-        <!--footer starts-->
+        <!--Kontent tugaydi-->
+        <!--Futyer boshlanadi-->
         <?php include "includes/footer.php";?>
-        <!--footer ends-->
+        <!--Futyer tugaydi-->
     </div>
-    <!--Main container ends here-->
+    <!--Asosiy konteyner tugaydi-->
 </body>
 </html>

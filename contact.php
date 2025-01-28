@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Us</title>
+    <title>Biz bilan bog'laning</title>
     <link rel="stylesheet" href="styles/style.css" media="all">
     <style>
         #guides {
@@ -43,34 +43,34 @@
 
 </head>
 <body>
-    <!--Main container starts here-->
+    <!--Asosiy konteyner bu yerda boshlanadi-->
     <div class="main_wrapper">
-        <!--Header starts here-->
+        <!--Sarlavha bu yerda boshlanadi-->
         <?php include 'includes/header.php'; ?>
-        <!--Header ends here-->
-        <!--Navbar starts here-->
+        <!--Sarlavha bu yerda tugaydi-->
+        <!--Navigatsiya paneli bu yerda boshlanadi-->
         <?php include 'includes/navbar.php'; ?>
-        <!--Navbar ends here-->
-        <!--Content starts here-->
+        <!--Navigatsiya paneli bu yerda tugaydi-->
+        <!--Kontent bu yerda boshlanadi-->
         <div class="content_wrapper">
             <div class="sidebar">
-                <div id="sidebar_title"><b>Contact Us</b></div>
+                <div id="sidebar_title"><b>Biz bilan bog'laning</b></div>
                 <br><br><br><br><br><br><br>
-                <div id="sidebar_title"><b>24/7 Hotline</b></div>
-                <div id="sidebar_title"><b>Dial: 16505</b></div>
+                <div id="sidebar_title"><b>24/7 Yordam liniyasi</b></div>
+                <div id="sidebar_title"><b>Telefon: 16505</b></div>
             </div>
             <div id="content_area">
                 <div id="packages_box">
                     <br>
-                    <h2 style="font-family: Cambria;">Our Local Guides</h2>
+                    <h2 style="font-family: Cambria;">Bizning Mahalliy Gidlarimiz</h2>
                     <br>
                     <table id="guides" align="center" bgcolor="#EEE0CB">
                         <tr align="center" bgcolor="#5FCEE8">
-                            <th id="thfix">Name</th>
+                            <th id="thfix">Ism</th>
                             <th id="thfix">Email</th>
-                            <th id="thfix">Location</th>
-                            <th id="thfix">Address</th>
-                            <th id="thfix">Contact</th>
+                            <th id="thfix">Joylashuv</th>
+                            <th id="thfix">Manzil</th>
+                            <th id="thfix">Aloqa</th>
                         </tr>
                         <?php
                         include("includes/db.php");
@@ -103,23 +103,23 @@
                     </table>
 
                     <br><br><br>
-                    <h3 style="font-family: Cambria;">Head Office:</h3>
-                    <p id="headoff"><b>Address: </b>221B Baker Street, London, UK.<br>
-                        <b>Contact: </b>123456789
+                    <h3 style="font-family: Cambria;">Bosh Ofis:</h3>
+                    <p id="headoff"><b>Manzil: </b>221B Baker Street, London, UK.<br>
+                        <b>Aloqa: </b>123456789
                     </p>
                     <br>
-                    <h4 style="font-family: Cambria;">Regional Office:</h4>
-                    <p id="regoff"><b>Address: </b>102 Stadium Market, Gulistan, Dhaka, Bangladesh<br>
-                        <b>Contact: </b>0987654321
+                    <h4 style="font-family: Cambria;">Mintaqaviy Ofis:</h4>
+                    <p id="regoff"><b>Manzil: </b>102 Stadium Market, Gulistan, Dhaka, Bangladesh<br>
+                        <b>Aloqa: </b>0987654321
                     </p>
                 </div>
             </div>
         </div>
-        <!--Content ends here-->
-        <!--footer starts-->
+        <!--Kontent tugaydi-->
+        <!--Futyer boshlanadi-->
         <?php include "includes/footer.php";?>
-        <!--footer ends-->
+        <!--Futyer tugaydi-->
     </div>
-    <!--Main container ends here-->
+    <!--Asosiy konteyner tugaydi-->
 </body>
 </html>

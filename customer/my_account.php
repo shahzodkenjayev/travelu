@@ -16,8 +16,8 @@ include("functions/functions.php");
     <div class="main_wrapper">
         <!--Header starts here-->
         <div class="header_wrapper">
-            <a href="../index.php"><img id="logo" src="images/logo.png"></a>
-            <img id="banner" src="images/banner.jpg">
+            <a href="../index.php"><img id="logo" width="800" height="150" src="images/logo.png"></a>
+            <img id="banner" width="800" height="150" src="images/banner.jpg">
         </div>
         <!--Header ends here-->
         <!--Navbar starts here-->

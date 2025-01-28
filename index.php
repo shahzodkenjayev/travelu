@@ -6,7 +6,7 @@ include("functions/functions.php");
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Travel Bird : Home</title>
+    <title>UNITUR : SAYOHAT</title>
     <link rel="stylesheet" href="styles/style.css" media="all">
     <style>
         .adminbtn {
@@ -53,20 +53,20 @@ include("functions/functions.php");
                         if (isset($_SESSION['customer_email'])) {
                             echo "<b>Welcome: </b>" . $_SESSION['customer_email'] . "<b style='color: yellow;'> Your</b>";
                         } else {
-                            echo "<b>Welcome Guest:</b>";
+                            echo "<b>Xush kelibsiz</b>";
                         }
                         ?>
-                        <b style="color: yellow;">Shopping Cart-</b> Total Items: <?php total_items(); ?>
-                        Total Price: <?php total_price(); ?> <a href="cart.php" style="color: yellow;">Go to Cart</a>
+                        <b style="color: yellow;">Tanlanganlar-</b> turlar: <?php total_items(); ?>
+                        Umumiy narxi: <?php total_price(); ?> <a href="cart.php" style="color: yellow;">Kartaga qaytish</a>
                         <?php
                         if (!isset($_SESSION['customer_email'])) {
-                            echo "<a href='checkout.php' style='color: orange;'>User Login</a>";
+                            echo "<a href='checkout.php' style='color: orange;'>Shahsiy kabinet</a>";
                         } else {
                             echo "<a href='logout.php' style='color: orange;''>Logout</a>";
                         }
                         ?>
                         <button class="adminbtn"><a style="text-decoration: none; color: #ffffff;"
-                                                    href="admin_area/index.php">Admin Login</a></button>
+                                                    href="admin_area/index.php"></a></button>
                     </span>
                 </div>
                 <div id="packages_box">

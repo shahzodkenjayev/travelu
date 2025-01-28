@@ -1,9 +1,16 @@
 <?php
+$server = 'localhost';
+$username = 'root';
+$password = 'newpassword';
+$database = 'tagency';
 
-$con = mysqli_connect("localhost","root","","tagency");
+// MySQLga ulanish
+$con = mysqli_connect($server, $username, $password, $database);
 
-if (mysqli_connect_errno()) {
-	echo "Failed to connect to MySQL: ".mysqli_connect_error();
+// Agar ulanishda xato bo'lsa
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+} else {
+    echo "Connected successfully!";
 }
 
-?>

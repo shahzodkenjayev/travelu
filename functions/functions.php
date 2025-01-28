@@ -1,10 +1,17 @@
 <?php
+$server = 'localhost';
+$username = 'root';
+$password = 'newpassword';
+$database = 'tagency';
 
-$con = mysqli_connect("localhost", "root", "", "tagency");
+$con = mysqli_connect($server, $username, $password, $database);
 
-if (mysqli_connect_errno()) {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
 }
+
+
+
 
 //getting user ip address
 function getIp()
@@ -133,9 +140,9 @@ function getPack()
 				<div id='single_package'>
 				<h3 style='font-family: Cambria; margin-bottom: 2px;'>$pack_title</h3>
 				<img src='admin_area/package_images/$pack_image' width='180' height='180'>
-				<p><b>Cost: $ $pack_price</b></p>
-				<a href='details.php?pack_id=$pack_id' style='float: left;font-size:18px;text-decoration: none;'>Details</a>
-				<a href='index.php?add_cart=$pack_id'><button style='float: right; font-size:14px; cursor: pointer; padding: 2px 4px;'>Book</button></a>
+				<p><b>Narxi: $ $pack_price</b></p>
+				<a href='details.php?pack_id=$pack_id' style='float: left;font-size:18px;text-decoration: none;'>Batafsil</a>
+				<a href='index.php?add_cart=$pack_id'><button style='float: right; font-size:14px; cursor: pointer; padding: 2px 4px;'>Savatga qo'shish</button></a>
 				</div>
 				";
             }
@@ -171,8 +178,8 @@ function getCatPack()
 			<h3>$pack_title</h3>
 			<img src='admin_area/package_images/$pack_image' width='180' height='180'>
 			<p><b> $ $pack_price</b></p>
-			<a href='details.php?pack_id=$pack_id' style='float: left;font-size:18px;text-decoration: none;'>Details</a>
-			<a href='index.php?pack_id=$pack_id'><button style='float: right; font-size:14px; cursor: pointer; padding: 2px 4px;'>Book</button></a>
+			<a href='details.php?pack_id=$pack_id' style='float: left;font-size:18px;text-decoration: none;'>Batafsil</a>
+			<a href='index.php?pack_id=$pack_id'><button style='float: right; font-size:14px; cursor: pointer; padding: 2px 4px;'>Savatga qo'shish</button></a>
 			</div>
 			";
         }
@@ -208,7 +215,7 @@ function getTypePack()
 			<img src='admin_area/package_images/$pack_image' width='180' height='180'>
 			<p><b> $ $pack_price</b></p>
 			<a href='details.php?pack_id=$pack_id' style='float: left;font-size:18px;text-decoration: none;'>Details</a>
-			<a href='index.php?pack_id=$pack_id'><button style='float: right; font-size:14px; cursor: pointer; padding: 2px 4px;'>Book</button></a>
+			<a href='index.php?pack_id=$pack_id'><button style='float: right; font-size:14px; cursor: pointer; padding: 2px 4px;'>Buyurtma</button></a>
 			</div>
 			";
         }

@@ -16,7 +16,7 @@ if (isset($_POST['register'])) {
     $c_contact = $_POST['c_contact'];
     $c_address = $_POST['c_address'];
 
-    // image will upload there
+    // rasimni yuklash
     move_uploaded_file($c_image_tmp, "customer/customer_images/$c_image");
 
     $insert_c = "INSERT INTO customers (customer_ip,customer_name,customer_email,customer_pass,c_passport,customer_country,customer_city,customer_contact,customer_address,customer_image) VALUES ('$ip','$c_name','$c_email','$c_pass','$c_passport','$c_country','$c_city','$c_contact','$c_address','$c_image')";
@@ -31,22 +31,22 @@ if (isset($_POST['register'])) {
 
     if ($check_cart == 0) {
         $_SESSION['customer_email'] = $c_email;
-        echo "<script>alert('Account has been created successfully. Thanks!')</script>";
+        echo "<script>alert('Hisob muvaffaqiyatli yaratildi. Rahmat!')</script>";
         echo "<script>window.open('customer/my_account.php','_self')</script>";
     } else {
         $_SESSION['customer_email'] = $c_email;
-        echo "<script>alert('Account has been created successfully. Thanks!')</script>";
+        echo "<script>alert('Hisob muvaffaqiyatli yaratildi. Rahmat!')</script>";
         echo "<script>window.open('checkout.php','_self')</script>";
     }
 
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
     <meta charset="UTF-8">
-    <title>Travel Bird : Register</title>
+    <title>Travel Bird : Ro'yxatdan o'tish</title>
     <link rel="stylesheet" href="styles/style.css" media="all">
     <style type="text/css">
         #fixm {
@@ -63,7 +63,7 @@ if (isset($_POST['register'])) {
         #btn {
             font-family: arial;
             font-size: 14px;
-            background-color: #4CAF50; /* Green */
+            background-color: #4CAF50; /* Yashil */
             border: none;
             color: white;
             padding: 10px 10px;
@@ -85,98 +85,105 @@ if (isset($_POST['register'])) {
     </style>
 </head>
 <body>
-    <!--Main container starts here-->
+    <!--Asosiy konteyner bu yerda boshlanadi-->
     <div class="main_wrapper">
-        <!--Header starts here-->
+        <!--Sarlavha bu yerda boshlanadi-->
         <?php include 'includes/header.php'; ?>
-        <!--Header ends here-->
-        <!--Navbar starts here-->
+        <!--Sarlavha bu yerda tugaydi-->
+        <!--Navigatsiya paneli bu yerda boshlanadi-->
         <?php include 'includes/navbar.php'; ?>
-        <!--Navbar ends here-->
-        <!--Content starts here-->
+        <!--Navigatsiya paneli bu yerda tugaydi-->
+        <!--Kontent bu yerda boshlanadi-->
         <div class="content_wrapper">
-            <!--left-sidebar starts-->
+            <!--Chap sidebar boshlanadi-->
             <?php include "includes/left-sidebar.php"; ?>
-            <!--left-sidebar ends-->
+            <!--Chap sidebar tugaydi-->
             <div id="content_area">
                 <?php cart(); ?>
                 <div id="shopping_cart">
-                        <span style="float: right;font-size: 18px;padding: 5px;line-height: 40px;">Welcome Guest! <b
-                                    style="color: yellow;">Shopping Cart-</b> Total Items: <?php total_items(); ?> Total Price: <?php total_price(); ?> <a
-                                    href="cart.php" style="color: yellow;">Go to Cart</a></b></span>
+                        <span style="float: right;font-size: 18px;padding: 5px;line-height: 40px;">Xush kelibsiz, Mehmon! <b
+                                    style="color: yellow;">Savatcha-</b> Jami mahsulotlar: <?php total_items(); ?> Jami narx: <?php total_price(); ?> <a
+                                    href="cart.php" style="color: yellow;">Savatchaga o'tish</a></b></span>
                 </div>
                 <form action="customer_register.php" method="post" enctype="multipart/form-data">
                     <table align="center" width="750" style="margin-top: 20px;">
                         <tr align="center">
                             <td colspan="6">
-                                <h2 style="margin-bottom: 15px; font-family: Cambria;">Create an Account</h2>
+                                <h2 style="margin-bottom: 15px; font-family: Cambria;">Hisob yaratish</h2>
                             </td>
                         </tr>
                         <tr>
-                            <td align="right" id="fixm">Your Name:</td>
+                            <td align="right" id="fixm">Ismingiz:</td>
                             <td><input id="fixi" type="text" name="c_name" required=""></td>
                         </tr>
                         <tr>
-                            <td align="right" id="fixm">Your Email:</td>
+                            <td align="right" id="fixm">Email manzilingiz:</td>
                             <td><input type="email" name="c_email" required=""></td>
                         </tr>
                         <tr>
-                            <td align="right" id="fixm">Your Password:</td>
+                            <td align="right" id="fixm">Parolingiz:</td>
                             <td><input id="fixi" type="password" name="c_pass" required=""></td>
                         </tr>
                         <tr>
-                            <td align="right" id="fixm">Your Passport ID:</td>
+                            <td align="right" id="fixm">Pasport ID raqamingiz:</td>
                             <td><input type="text" name="c_passport" required=""></td>
                         </tr>
                         <tr>
-                            <td align="right" id="fixm">Your Image:</td>
+                            <td align="right" id="fixm">Rasm:</td>
                             <td><input id="fixi" type="file" name="c_image" required=""></td>
                         </tr>
                         <tr>
-                            <td align="right" id="fixm">Your Country:</td>
+                            <td align="right" id="fixm">Davlatingiz:</td>
                             <td>
-                                <select name="c_country" required="">Select a
+                                <select name="c_country" required="">Tanlang
+                                    <option>O'zbekiston</option>
+                                    <option>Rossiya</option> 
+                                    <option>Qozog'iston</option>
+                                    <option>Qirg'iziston</option>
+                                    <option>Tojikiston</option>
+                                    <option>Turkmaniston</option>   
                                     <option>Bangladesh</option>
-                                    <option>India</option>
-                                    <option>Japan</option>
-                                    <option>China</option>
-                                    <option>Russia</option>
-                                    <option>Portugal</option>
-                                    <option>England</option>
-                                    <option>Brazil</option>
-                                    <option>Spain</option>
-                                    <option>France</option>
-                                    <option>Switzerland</option>
-                                    <option>Croatia</option>
+                                    <option>Hindiston</option>
+                                    <option>Yaponiya</option>
+                                    <option>Xitoy</option>
+                                    <option>AQSH</option>
+                                    <option>Portugaliya</option>
+                                    <option>Angliya</option>
+                                    <option>Braziliya</option>
+                                    <option>Ispaniya</option>
+                                    <option>Fransiya</option>
+                                    <option>Shveytsariya</option>
+                                    <option>Xorvatiya</option>
                                     <option>Argentina</option>
+                                    
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <td align="right" id="fixm">Your City:</td>
+                            <td align="right" id="fixm">Shaharingiz:</td>
                             <td><input id="fixi" type="text" name="c_city" required=""></td>
                         </tr>
                         <tr>
-                            <td align="right" id="fixm">Your Contact:</td>
+                            <td align="right" id="fixm">Aloqa raqamingiz:</td>
                             <td><input id="fixi" type="text" name="c_contact" required=""></td>
                         </tr>
                         <tr>
-                            <td align="right" id="fixm">Your Address:</td>
+                            <td align="right" id="fixm">Manzilingiz:</td>
                             <td><input id="fixi" type="text" name="c_address" required=""></td>
                         </tr>
                         <tr align="center">
-                            <td colspan="6"><input id="btn" type="submit" name="register" value="Create Account">
+                            <td colspan="6"><input id="btn" type="submit" name="register" value="Hisob yaratish">
                             </td>
                         </tr>
                     </table>
                 </form>
             </div>
         </div>
-        <!--Content ends here-->
-        <!--footer starts-->
+        <!--Kontent tugaydi-->
+        <!--Futyer boshlanadi-->
         <?php include "includes/footer.php"; ?>
-        <!--footer ends-->
+        <!--Futyer tugaydi-->
     </div>
-    <!--Main container ends here-->
+    <!--Asosiy konteyner tugaydi-->
 </body>
 </html>

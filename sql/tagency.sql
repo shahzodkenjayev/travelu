@@ -68,9 +68,10 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
-(1, 'Business'),
-(2, 'Economy'),
-(3, 'Regular');
+(1, 'Uzbekiston turlari'),
+(2, 'Xalqaro turlar'),
+(3, 'Tibbiy turizm'),
+(4, 'Individual turizm');
 
 -- --------------------------------------------------------
 

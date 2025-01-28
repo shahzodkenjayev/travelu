@@ -3,39 +3,39 @@ session_start();
 include("functions/functions.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
-    <title>Travel Bird : Checkout</title>
+    <title>LOGIN : To'lov</title>
     <link rel="stylesheet" href="styles/style.css" media="all">
 </head>
 <body>
-    <!--Main container starts here-->
+    <!--Asosiy konteyner bu yerda boshlanadi-->
     <div class="main_wrapper">
-        <!--Header starts here-->
+        <!--Sarlavha bu yerda boshlanadi-->
         <?php include 'includes/header.php'; ?>
-        <!--Header ends here-->
-        <!--Navbar starts here-->
+        <!--Sarlavha bu yerda tugaydi-->
+        <!--Navigatsiya paneli bu yerda boshlanadi-->
         <?php include 'includes/navbar.php'; ?>
-        <!--Navbar ends here-->
-        <!--Content starts here-->
+        <!--Navigatsiya paneli bu yerda tugaydi-->
+        <!--Kontent bu yerda boshlanadi-->
         <div class="content_wrapper">
-            <!--left-sidebar starts-->
+            <!--Chap tomondagi panel boshlanadi-->
             <?php include "includes/left-sidebar.php"; ?>
-            <!--left-sidebar ends-->
+            <!--Chap tomondagi panel tugaydi-->
             <div id="content_area">
                 <?php cart(); ?>
                 <div id="shopping_cart">
                     <span style="float: right;font-size: 18px;padding: 5px;line-height: 40px;">
                         <?php
                         if (isset($_SESSION['customer_email'])) {
-                            echo "<b>Welcome: </b>" . $_SESSION['customer_email'] . "<b style='color: yellow;'> Your</b>";
+                            echo "<b>Xush kelibsiz: </b>" . $_SESSION['customer_email'] . "<b style='color: yellow;'> Sizning</b>";
                         } else {
-                            echo "<b>Welcome Guest:</b>";
+                            echo "<b>Xush kelibsiz Mehmon:</b>";
                         }
                         ?>
-                        <b style="color: yellow;">Shopping Cart-</b> Total Items: <?php total_items(); ?> Total Price: <?php total_price(); ?> <a
-                                href="cart.php" style="color: yellow;">Go to Cart</a></b></span>
+                        <b style="color: yellow;">Savatcha-</b> Jami mahsulotlar: <?php total_items(); ?> Jami narx: <?php total_price(); ?> <a
+                                href="cart.php" style="color: yellow;">Savatchaga o'tish</a></b></span>
                 </div>
                 <div id="packages_box">
                     <?php
@@ -48,11 +48,11 @@ include("functions/functions.php");
                 </div>
             </div>
         </div>
-        <!--Content ends here-->
-        <!--footer starts-->
+        <!--Kontent tugaydi-->
+        <!--Futyer boshlanadi-->
         <?php include "includes/footer.php";?>
-        <!--footer ends-->
+        <!--Futyer tugaydi-->
     </div>
-    <!--Main container ends here-->
+    <!--Asosiy konteyner tugaydi-->
 </body>
 </html>

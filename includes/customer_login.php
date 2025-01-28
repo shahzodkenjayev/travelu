@@ -45,20 +45,19 @@ include("includes/db.php");
         <table width="500px" align="center" bgcolor="skyblue">
             <tr align="center">
                 <td colspan="3">
-                    <h2 style="margin-top: 20px; margin-bottom: 15px; font-family: Cambria;">Login or Register to
-                                                                                             Buy!</h2>
+                    <h2 style="margin-top: 20px; margin-bottom: 15px; font-family: Cambria;">Kiring yoki Ro'yxatdan o'ting    </h2>
                 </td>
             </tr>
             <tr>
                 <td align="right"><b style="font-family: arial; font-size: 15px;">Email:</b></td>
-                <td><input id="inputbox" type="text" name="email" placeholder="Enter your email" required=""></td>
+                <td><input id="inputbox" type="text" name="email" placeholder="Email kiriting" required=""></td>
             </tr>
             <tr>
-                <td align="right"><b style="font-family: arial; font-size: 15px;">Password:</b></td>
-                <td><input id="inputbox" type="password" name="pass" placeholder="Enter your password" required=""></td>
+                <td align="right"><b style="font-family: arial; font-size: 15px;">Parol:</b></td>
+                <td><input id="inputbox" type="password" name="pass" placeholder="Parolingizni kiriting" required=""></td>
             </tr>
             <tr align="center">
-                <td colspan="3"><a href="../checkout.php?forgot_pass"><p id="fp">Forgot Password?</p></a></td>
+                <td colspan="3"><a href="../checkout.php?forgot_pass"><p id="fp">Parolni unitdingizmi?</p></a></td>
             </tr>
             <tr align="center">
                 <td colspan="3"><input id="btn" type="submit" name="login" value="Login"></td>
@@ -66,9 +65,7 @@ include("includes/db.php");
             </tr>
         </table>
         <h2 style="float: right; padding: 0px 25px 10px 0px; font-family: arial"><a href="customer_register.php"
-                                                                                    style="text-decoration: none;">New?
-                                                                                                                   Register
-                                                                                                                   Here</a>
+                                                                                    style="text-decoration: none;">Ro'yxatdan o'tish</a>
         </h2>
     </form>
 

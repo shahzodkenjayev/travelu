@@ -140,8 +140,8 @@ function getPack()
 				<h3>$pack_title</h3>
 				<img src='admin_area/package_images/$pack_image' width='180' height='180'>
 				<p><b> Price: $ $pack_price</b></p>
-				<a href='details.php?pack_id=$pack_id' style='float: left;'>Details</a>
-				<a href='index.php?add_cart=$pack_id'><button style='float: right;'>Add to Cart</button></a>
+				<a href='details.php?pack_id=$pack_id' style='float: left;'>Batafsil</a>
+				<a href='index.php?add_cart=$pack_id'><button style='float: right;'>Kartaga qo'shish</button></a>
 				</div>
 				";
             }
