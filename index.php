@@ -7,6 +7,7 @@ include("functions/functions.php");
 <head>
     <meta charset="UTF-8">
     <title>UNITUR : SAYOHAT</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css" media="all">
     <style>
         .adminbtn {
