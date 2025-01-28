@@ -188,7 +188,7 @@ body {
     }
 }
 /* 4666x2769 ekrani uchun moslashgan CSS - Bu sizning asl holatingiz */
-@media (min-width: 4666px) and (min-height: 2769px) {
+@media (min-width: 7680px) and (min-height: 4320px) {
     .main_wrapper {
         width: 1000px;
     }
