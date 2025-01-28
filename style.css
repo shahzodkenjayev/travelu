@@ -1,163 +1,189 @@
-/* 4666x2769 ekrani uchun moslashgan CSS - Bu sizning asl holatingiz */
-@media (min-width: 4666px) and (min-height: 2769px) {
-    .main_wrapper {
-        width: 1000px;
-    }
-    .header_wrapper {
-        width: 1000px;
-    }
-    .menubar {
-        width: 1000px;
-    }
-    .content_wrapper {
-        width: 1000px;
-    }
-    #content_area {
-        width: 800px;
-    }
-    .sidebar {
-        width: 200px;
-    }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
 
-/* 1920x1080 yoki undan katta ekranlar uchun */
-@media (min-width: 1920px) {
-    .main_wrapper {
-        width: 90%; /* Ekran katta bo'lsa, kenglikni biroz qisqartiramiz */
-    }
-    .header_wrapper {
-        width: 90%;
-    }
-    .menubar {
-        width: 90%;
-    }
-    .content_wrapper {
-        width: 90%;
-    }
-    #content_area {
-        width: 70%;
-    }
-    .sidebar {
-        width: 20%;
-    }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 
-/* 1366x768 ekranlar uchun */
-@media (max-width: 1366px) {
-    .main_wrapper {
-        width: 95%;
-    }
-    .header_wrapper {
-        width: 95%;
-    }
-    .menubar {
-        width: 95%;
-    }
-    .content_wrapper {
-        width: 95%;
-    }
-    #content_area {
-        width: 65%;
-    }
-    .sidebar {
-        width: 30%;
-    }
+body {
+    background-image: url('pattern.jpg'); /* Foni sifatida rasmni qo'ying */
+    background-size: cover; /* Rasmni to'liq qoplash uchun */
+    background-position: center; /* Rasmni markazga joylashtirish */
+    background-repeat: no-repeat; /* Rasmni takrorlanmasligi uchun */
+}
+.main_wrapper {
+	width: 1000px;
+	height: auto;
+	margin: auto;
+	
+}
+.header_wrapper {
+	width: 1000px;
+	height: 150px;
+	margin: auto;
+}
+#logo {
+	float: right;
+}
+#banner {
+	float: left
+}
+.menubar {
+	width: 1000px;
+	height: 50px;
+	
+	color: white;
+}
+#menu {
+	padding: 0px;
+	margin: 0px;
+	line-height: 45px;
+	float: left;
+}
+#menu li {
+	list-style: none;
+	display: inline;
+}
+#menu a {
+	text-decoration: none;
+	color: white;
+	padding: 8px;
+	margin: 5px;
+	font-size: 18px;
+	font-family: COMIC SANS MS;
+}
+#menu a:hover {
+	color: orange;
+	font-weight: bolder;
+}
+#form {
+	float: right;
+	padding-right: 8px;
+	line-height: 45px;
+}
+.content_wrapper {
+	width: 1000px;
+	margin: auto;
+	
+}
+#content_area {
+	width: 800px;
+	float: right;
+	
+}
+.sidebar {
+	width: 200px;
+	background-image: url('pattern/jpg'); /* Rasm manzilini yozing */
+	background-size: cover; /* Rasm sidebarni to‘liq qoplashi uchun */
+	background-repeat: no-repeat; /* Rasmni takrorlashni o‘chiradi */
+	background-position: center; /* Rasmni markazlash */
+	float: left;
+	
+
+}
+#sidebar_title {
+	
+	color: rgb(153, 191, 70);
+	font-size: 22px;
+	font-family: Arial;
+	padding: 10px;
+	text-align: center;
+}
+#cats {
+	text-align: center;
+}
+#cats li {
+	list-style: none;
+	margin: 5px;
+}
+#cats a {
+	color: white;
+	padding: 8px;
+	margin: 10px;
+	text-align: center;
+	font-size: 20px;
+	font-family: COMIC SANS MS !important;
+	text-decoration: none;
+}
+#cats a:hover {
+	color: orange;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+#packages_box {
+	width: 780px;
+	text-align: center;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+#single_package {
+	float: left;
+	margin-left: 30px;
+	padding: 10px;
+}
+#single_package img {
+	border-style: none;
+}
+#shopping_cart {
+	width: 800px;
+	height: 50px;
+	
+	color: white;
 }
 
-/* 1024x768 ekranlar uchun (planshet o'lchamiga yaqin) */
-@media (max-width: 1024px) {
-    .main_wrapper {
-        width: 100%;
-    }
-    .header_wrapper {
-        width: 100%;
-    }
-    .menubar {
-        width: 100%;
-    }
-    .content_wrapper {
-        width: 100%;
-    }
-    #content_area {
-        width: 100%;
-        float: none;
-    }
-    .sidebar {
-        width: 100%;
-        float: none;
-    }
+
+.container {
+    flex: 1;
 }
 
-/* 768x480 ekranlar uchun (kichik ekranlar va mobil qurilmalar uchun) */
+#footer {
+    
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+}
+.language_flags {
+    display: flex;
+    position: absolute; /* Sahifada har doim bir joyda turish uchun */
+    top: 220px; /* Sahifaning yuqorisidan 50px bo'shliq */
+    right: 135px; /* Sahifaning o'ng tomonidan 10px bo'shliq */
+    justify-content: flex-end; /* O'ngga joylashtirish */
+    align-items: center; /* Vertikal markazlashtirish */
+    gap: 10px; /* Bayroqlar orasidagi bo'shliq */
+}
+
+.language_flags img {
+    width: 40px; /* Bayroqning kengligi */
+    height: 40px; /* Bayroqning bo'yi */
+    border-radius: 4px; /* Chegalarini yumshatish */
+    transition: transform 0.3s; /* Hover effekti */
+}
+
+.language_flags a img:hover {
+    transform: scale(1.1); /* Hover paytida kattalashish */
+}
 @media (max-width: 768px) {
-    .main_wrapper {
-        width: 100%;
-    }
-    .header_wrapper {
-        width: 100%;
-    }
-    .menubar {
-        width: 100%;
-    }
-    .content_wrapper {
-        width: 100%;
-    }
-    #content_area {
-        width: 100%;
-        float: none;
-    }
-    .sidebar {
-        width: 100%;
-        float: none;
-    }
-    #menu a {
-        font-size: 16px;
-        padding: 5px;
-    }
-    .language_flags {
-        top: 20px;
-        right: 10px;
-        gap: 8px;
-    }
     .language_flags img {
         width: 25px;
         height: 25px;
-    }
-}
-
-/* 480x320 ekranlar uchun (mobil telefonlar uchun) */
-@media (max-width: 480px) {
-    .main_wrapper {
-        width: 100%;
-    }
-    .header_wrapper {
-        width: 100%;
-    }
-    .menubar {
-        width: 100%;
-    }
-    .content_wrapper {
-        width: 100%;
-    }
-    #content_area {
-        width: 100%;
-        float: none;
-    }
-    .sidebar {
-        width: 100%;
-        float: none;
-    }
-    #menu a {
-        font-size: 14px;
-        padding: 4px;
-    }
-    .language_flags {
-        top: 10px;
-        right: 5px;
-        gap: 5px;
-    }
-    .language_flags img {
-        width: 20px;
-        height: 20px;
     }
 }
