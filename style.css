@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-    background-image: url('images/logo1.jpg'); /* Foni sifatida rasmni qo'ying */
+    background-image: url('pattern.jpg'); /* Foni sifatida rasmni qo'ying */
     background-size: cover; /* Rasmni to'liq qoplash uchun */
     background-position: center; /* Rasmni markazga joylashtirish */
     background-repeat: no-repeat; /* Rasmni takrorlanmasligi uchun */
@@ -91,7 +91,7 @@ body {
 }
 .sidebar {
 	width: 200px;
-	background-image: url('images/logo.webp'); /* Rasm manzilini yozing */
+	background-image: url('pattern/jpg'); /* Rasm manzilini yozing */
 	background-size: cover; /* Rasm sidebarni to‘liq qoplashi uchun */
 	background-repeat: no-repeat; /* Rasmni takrorlashni o‘chiradi */
 	background-position: center; /* Rasmni markazlash */
