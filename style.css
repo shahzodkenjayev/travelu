@@ -1,3 +1,4 @@
+/* Global reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,152 +24,160 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+/* Body */
 body {
+    font-family: Arial, sans-serif;
     background-image: url('pattern.jpg'); /* Foni sifatida rasmni qo'ying */
     background-size: cover; /* Rasmni to'liq qoplash uchun */
     background-position: center; /* Rasmni markazga joylashtirish */
     background-repeat: no-repeat; /* Rasmni takrorlanmasligi uchun */
+    color: #333; /* Matn rangini aniqlash */
+    line-height: 1.6;
 }
+
+/* General Layout */
 .main_wrapper {
-	width: 1000px;
-	height: auto;
-	margin: auto;
-	
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
 .header_wrapper {
-	width: 1000px;
-	height: 150px;
-	margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 #logo {
-	float: right;
+    float: right;
 }
+
 #banner {
-	float: left
+    float: left;
 }
+
+/* Menubar */
 .menubar {
-	width: 1000px;
-	height: 50px;
-	
-	color: white;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
 }
+
 #menu {
-	padding: 0px;
-	margin: 0px;
-	line-height: 45px;
-	float: left;
+    padding: 0;
+    margin: 0;
+    line-height: 45px;
+    float: left;
 }
+
 #menu li {
-	list-style: none;
-	display: inline;
+    list-style: none;
+    display: inline-block;
 }
+
 #menu a {
-	text-decoration: none;
-	color: white;
-	padding: 8px;
-	margin: 5px;
-	font-size: 18px;
-	font-family: COMIC SANS MS;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-family: COMIC SANS MS;
 }
+
 #menu a:hover {
-	color: orange;
-	font-weight: bolder;
+    color: orange;
+    font-weight: bolder;
 }
+
+/* Form */
 #form {
-	float: right;
-	padding-right: 8px;
-	line-height: 45px;
+    float: right;
+    padding-right: 8px;
+    line-height: 45px;
 }
+
+/* Content */
 .content_wrapper {
-	width: 1000px;
-	margin: auto;
-	
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 #content_area {
-	width: 800px;
-	float: right;
-	
+    width: 75%;
+    padding: 10px;
 }
+
 .sidebar {
-	width: 200px;
-	background-image: url('pattern/jpg'); /* Rasm manzilini yozing */
-	background-size: cover; /* Rasm sidebarni to‘liq qoplashi uchun */
-	background-repeat: no-repeat; /* Rasmni takrorlashni o‘chiradi */
-	background-position: center; /* Rasmni markazlash */
-	float: left;
-	
-
+    width: 23%;
+    background-image: url('pattern.jpg'); /* Rasm manzilini yozing */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
 }
+
+/* Sidebar Title */
 #sidebar_title {
-	
-	color: rgb(153, 191, 70);
-	font-size: 22px;
-	font-family: Arial;
-	padding: 10px;
-	text-align: center;
+    color: rgb(153, 191, 70);
+    font-size: 22px;
+    font-family: Arial;
+    padding: 10px;
+    text-align: center;
 }
+
+/* Category Links */
 #cats {
-	text-align: center;
+    text-align: center;
 }
+
 #cats li {
-	list-style: none;
-	margin: 5px;
+    list-style: none;
+    margin: 5px;
 }
+
 #cats a {
-	color: white;
-	padding: 8px;
-	margin: 10px;
-	text-align: center;
-	font-size: 20px;
-	font-family: COMIC SANS MS !important;
-	text-decoration: none;
+    color: white;
+    padding: 8px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: COMIC SANS MS !important;
+    text-decoration: none;
 }
+
 #cats a:hover {
-	color: orange;
-	font-weight: bolder;
-	text-decoration: underline;
-}
-#packages_box {
-	width: 780px;
-	text-align: center;
-	margin-left: 30px;
-	margin-bottom: 10px;
-}
-#single_package {
-	float: left;
-	margin-left: 30px;
-	padding: 10px;
-}
-#single_package img {
-	border-style: none;
-}
-#shopping_cart {
-	width: 800px;
-	height: 50px;
-	
-	color: white;
+    color: orange;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
-
-.container {
-    flex: 1;
-}
-
+/* Footer */
 #footer {
-    
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid #ddd;
     margin-top: auto;
+    background-color: #333;
+    color: white;
 }
+
+/* Language Flags */
 .language_flags {
     display: flex;
-    position: absolute; /* Sahifada har doim bir joyda turish uchun */
-    top: 220px; /* Sahifaning yuqorisidan 50px bo'shliq */
-    right: 135px; /* Sahifaning o'ng tomonidan 10px bo'shliq */
+    position: fixed; /* Sahifada har doim bir joyda turish uchun */
+    top: 50px; /* Sahifaning yuqorisidan 50px bo'shliq */
+    right: 20px; /* Sahifaning o'ng tomonidan 20px bo'shliq */
     justify-content: flex-end; /* O'ngga joylashtirish */
     align-items: center; /* Vertikal markazlashtirish */
     gap: 10px; /* Bayroqlar orasidagi bo'shliq */
+    z-index: 1000; /* Bayroqlarni ustki qatlamga qo'yish */
 }
 
 .language_flags img {
@@ -181,10 +190,80 @@ body {
 .language_flags a img:hover {
     transform: scale(1.1); /* Hover paytida kattalashish */
 }
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .main_wrapper {
+        width: 90%;
+    }
+
+    .header_wrapper {
+        flex-direction: column;
+    }
+
+    #content_area, .sidebar {
+        width: 100%;
+    }
+
+    .language_flags {
+        top: 30px; /* Mobil qurilmada bayroqlarni yuqoriroq joylashtirish */
+        right: 10px;
+    }
+}
+
 @media (max-width: 768px) {
+    .language_flags img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menubar {
+        height: 45px;
+    }
+
+    #menu a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .content_wrapper {
+        flex-direction: column;
+    }
+
+    .header_wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
     .language_flags img {
         width: 25px;
         height: 25px;
     }
-}
 
+    #menu a {
+        font-size: 14px;
+    }
+
+    .main_wrapper {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header_wrapper {
+        height: auto;
+    }
+
+    .menubar {
+        height: 40px;
+    }
+}
