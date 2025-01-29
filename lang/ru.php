@@ -1,6 +1,6 @@
 <?php
 return [
-    'welcome' => 'Добро пожаловать',
+    'Xush kelibsiz' => 'Добро пожаловать',
     'your' => 'Ваши',
     'selected' => 'выбранные туры',
     'total_price' => 'Общая стоимость',
