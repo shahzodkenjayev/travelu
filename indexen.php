@@ -6,6 +6,14 @@ include("functions/functions.php");?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <div id="google_translate_element"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'uz', includedLanguages: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <title>UNITUR : </title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css" media="all">
