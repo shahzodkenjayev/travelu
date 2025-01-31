@@ -79,7 +79,7 @@ include("functions/functions.php");?>
         </div>
         <!--Content ends-->
         <!--footer starts-->
-        <?php include "includes/footer.php";?>
+        <?php include "includes/footerru.php";?>
         <!--footer ends-->
     </div>
     <!--Main container ends-->
