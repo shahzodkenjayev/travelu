@@ -102,6 +102,30 @@
                         ?>
                     </table>
 
+
+        <table id="guides" align="center" bgcolor="#EEE0CB">
+                        <tr align="center" bgcolor="#5FCEE8">
+                            <th id="thfix">Companiya</th>
+                            <th id="thfix">Р/с:</th>
+                            <th id="thfix">Manzil</th>
+                            <th id="thfix">Bank</th>
+                            <th id="thfix">МФО</th>
+                            <th id="thfix">ИНН</th>
+                        </tr>
+                        
+                            <tr align="left">
+                                <td style="width: 150px;"><?php echo "UNITUR"  MCHJ ?></td>
+                                <td style="width: 160px;"><?php echo 202080003071869490; ?></td>
+                                <td style="width: 100px;"><?php echo TOSHKENT SHAHRI, BEKTEMIR TUMANI, XUSAYN BOYQARO KO'CHASI, 117-UY; ?></td>
+                                <td style="width: 240px;" align="center"><?php echo "Ipak yo'li bank" Sag'bon fliali; ?></td>
+                                <td style="width: 120px;"><?php echo 01036; ?></td>
+                                <td style="width: 120px;"><?php echo 311796396; ?></td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                    </table>
+
                     <br><br><br>
                     <h3 style="font-family: Cambria;">Bosh Ofis:</h3>
                     <p id="headoff"><b>Manzil: </b>Toshkent sh . Bektemir t. Husayn Bayqaro 117-uy.<br>
