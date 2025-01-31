@@ -47,25 +47,26 @@ include("functions/functions.php");?>
             <?php include "includes/left-sidebar.php"; ?>
             <!--left-sidebar ends-->
             <div id="content_area">
-                <?php cart(); ?>
-                <div id="shopping_cart">
-                    <span style="float: right;font-size: 18px;padding: 5px;line-height: 40px;">
-                        <?php
-                        if (isset($_SESSION['customer_email'])) {
-                            echo "<b>Welcome: </b>" . $_SESSION['customer_email'] . "<b style='color: yellow;'> Your</b>";
-                        } else {
-                            echo "<b>Xush kelibsiz</b>";
-                        }
-                        ?>
-                        <b style="color: yellow;">Tanlanganlar-</b> turlar: <?php total_items(); ?>
-                        Umumiy narxi: <?php total_price(); ?> <a href="cart.php" style="color: yellow;">Kartaga qaytish</a>
-                        <?php
-                        if (!isset($_SESSION['customer_email'])) {
-                            echo "<a href='checkout.php' style='color: orange;'>Shahsiy kabinet</a>";
-                        } else {
-                            echo "<a href='logout.php' style='color: orange;''>Logout</a>";
-                        }
-                        ?>
+              <?php cart(); ?>
+<div id="shopping_cart">
+    <span style="float: right;font-size: 18px;padding: 5px;line-height: 40px;">
+        <?php
+        if (isset($_SESSION['customer_email'])) {
+            echo "<b style='color: #0056b3;'>Xush kelibsiz: </b>" . $_SESSION['customer_email'] . "<b style='color: yellow;'> Your</b>";
+        } else {
+            echo "<b style='color: #0056b3;'>Xush kelibsiz: </b>";
+        }
+        ?>
+        <b style="color: #0056b3;">Tanlanganlar-</b> turlar: <?php total_items(); ?>
+        <span style="color: #0056b3;">Umumiy narxi: <?php total_price(); ?></span>
+        <a href="cart.php" style="color: #0056b3;">Kartaga qaytish</a>
+        <?php
+        if (!isset($_SESSION['customer_email'])) {
+            echo "<a href='checkout.php' style='color: #0056b3;'>Shahsiy kabinet</a>";
+        } else {
+            echo "<a href='logout.php' style='color: #0056b3;'>Logout</a>";
+        }
+        ?>
                         <button class="adminbtn"><a style="text-decoration: none; color: #ffffff;"
                                                     href="admin_area/index.php"></a></button>
                     </span>
