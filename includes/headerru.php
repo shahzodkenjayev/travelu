@@ -6,7 +6,7 @@
 
     <!-- Bayroqlarni qo'shish -->
     <div class="language_flags">
-        <a href="?lang=uz"><img src="images/flag_uzbek.png" alt="O'zbekcha"></a>
+        <a href="index.php"><img src="images/flag_uzbek.png" alt="O'zbekcha"></a>
         <a href="indexen.php"><img src="images/flag_english.png" alt="English"></a>
         <a href="indexru.php"><img src="images/flag_russian.png" alt="Русский"></a>
         <a href="indextr.php"><img src="images/flag_turkey.png" alt="Turkey"></a>
