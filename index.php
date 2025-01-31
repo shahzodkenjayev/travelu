@@ -52,7 +52,7 @@ include("functions/functions.php");?>
     <span style="float: right;font-size: 18px;padding: 5px;line-height: 40px;">
         <?php
         if (isset($_SESSION['customer_email'])) {
-            echo "<b style='color: #0056b3;'>Xush kelibsiz: </b>" . $_SESSION['customer_email'] . "<b style='color: yellow;'> Your</b>";
+            echo "<b style='color: #0056b3;'>Xush kelibsiz: </b>" . $_SESSION['customer_email'] . "<b style='color: #0056b3;'> kabinet</b>";
         } else {
             echo "<b style='color: #0056b3;'>Xush kelibsiz: </b>";
         }
