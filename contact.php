@@ -114,7 +114,7 @@
     </tr>
     <tr align="left">
         <td style="width: 155px;"><?php echo "UNITUR" . " MCHJ"; ?></td>
-        <td style="width: 155px;"><?php echo 202080003071869490; ?></td>
+        <td style="width: 150px;"><?php echo 202080003071869490; ?></td>
         <td style="width: 110px;"><?php echo "Toshkent sh, Bektemir t, Husayn-Bayqaro ko'chasi, 117-uy"; ?></td>
         <td style="width: 170px;" align="center"><?php echo "Ipak yo'li bank Sag'bon filiali"; ?></td>
         <td style="width: 100px;"><?php echo 01036; ?></td>
