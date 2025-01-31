@@ -12,10 +12,10 @@ include("functions/functions.php");
     <!--Основной контейнер начало-->
     <div class="main_wrapper">
         <!--Заголовок начало-->
-        <?php include 'includes/header.php'; ?>
+        <?php include 'includes/headerru.php'; ?>
         <!--Заголовок конец-->
         <!--Панель навигации начало-->
-        <?php include 'includes/navbar.php'; ?>
+        <?php include 'includes/navbarru.php'; ?>
         <!--Панель навигации конец-->
         <!--Контент начало-->
         <div class="content_wrapper">
@@ -63,7 +63,7 @@ include("functions/functions.php");
         </div>
         <!--Контент конец-->
         <!--Панель пользователя начало-->
-        <?php include "includes/footer.php";?>
+        <?php include "includes/footerru.php";?>
         <!--Панель пользователя конец-->
     </div>
     <!--Основной контейнер конец-->
