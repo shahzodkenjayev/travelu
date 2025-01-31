@@ -1,6 +1,6 @@
 <div class="menubar">
     <ul id="menu">
-        <li><a href="index.php">Bosh sahifa</a></li>
+        <li><a href="https://unitur.uz/">Bosh sahifa</a></li>
         <li><a href="all_packages.php">Barcha paketlar</a></li>
         <li><a href="checkout.php">Mening hisobim</a></li>
         <li><a href="customer_register.php">Ro'yxatdan o'tish</a></li>
