@@ -1,11 +1,7 @@
 <?php
 session_start();
 include("functions/functions.php");
-// Tilni olish va rus tilini default qilib o'rnatish
-$lang = isset($_GET['lang']) ? $_GET['lang'] : 'uz';
-$_SESSION['lang'] = $lang;
-$translations = include("langs/{$lang}.php");
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
