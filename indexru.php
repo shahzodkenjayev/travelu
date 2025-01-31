@@ -61,7 +61,7 @@ include("functions/functions.php");?>
                         Общие цена: <?php total_price(); ?> <a href="cart.php" style="color: yellow;">Вернуться на карту</a>
                         <?php
                         if (!isset($_SESSION['customer_email'])) {
-                            echo "<a href='checkout.php' style='color: orange;'>Shahsiy kabinet</a>";
+                            echo "<a href='checkout.php' style='color: orange;'>Личный кабинет</a>";
                         } else {
                             echo "<a href='logout.php' style='color: orange;''>Logout</a>";
                         }
