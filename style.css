@@ -50,7 +50,7 @@ body {
 	width: 1000px;
 	height: 50px;
 	
-	color: white;
+	color: #0056b3;
 }
 #menu {
 	padding: 0px;
@@ -71,7 +71,7 @@ body {
 	font-family: COMIC SANS MS;
 }
 #menu a:hover {
-	color: orange;
+	color: #0056b3;
 	font-weight: bolder;
 }
 #form {
@@ -101,7 +101,7 @@ body {
 }
 #sidebar_title {
 	
-	color: rgb(153, 191, 70);
+	color: #0056b3;
 	font-size: 22px;
 	font-family: Arial;
 	padding: 10px;
@@ -115,7 +115,7 @@ body {
 	margin: 5px;
 }
 #cats a {
-	color: white;
+	color: #0056b3;
 	padding: 8px;
 	margin: 10px;
 	text-align: center;
@@ -124,7 +124,7 @@ body {
 	text-decoration: none;
 }
 #cats a:hover {
-	color: orange;
+	color: #0056b3;
 	font-weight: bolder;
 	text-decoration: underline;
 }
