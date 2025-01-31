@@ -6,7 +6,7 @@ include("functions/functions.php");
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>UNITUR : SAYOHAT</title>
+    <title>UNITUR : </title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css" media="all">
     <style>
@@ -36,15 +36,15 @@ include("functions/functions.php");
     <!--Main container starts-->
     <div class="main_wrapper">
         <!--Header starts-->
-        <?php include 'includes/header.php'; ?>
+        <?php include 'includes/headerru.php'; ?>
         <!--Header ends-->
         <!--Navbar starts-->
-        <?php include 'includes/navbar.php'; ?>
+        <?php include 'includes/navbarru.php'; ?>
         <!--Navbar ends-->
         <!--Content starts-->
         <div class="content_wrapper">
             <!--left-sidebar starts-->
-            <?php include "includes/left-sidebar.php"; ?>
+            <?php include "includes/left-sidebarru.php"; ?>
             <!--left-sidebar ends-->
             <div id="content_area">
                 <?php cart(); ?>
@@ -54,11 +54,11 @@ include("functions/functions.php");
                         if (isset($_SESSION['customer_email'])) {
                             echo "<b>Welcome: </b>" . $_SESSION['customer_email'] . "<b style='color: yellow;'> Your</b>";
                         } else {
-                            echo "<b>Xush kelibsiz</b>";
+                            echo "<b>Добро пожаловать</b>";
                         }
                         ?>
-                        <b style="color: yellow;">Tanlanganlar-</b> turlar: <?php total_items(); ?>
-                        Umumiy narxi: <?php total_price(); ?> <a href="cart.php" style="color: yellow;">Kartaga qaytish</a>
+                        <b style="color: yellow;">Вы выбрали-</b> turlar: <?php total_items(); ?>
+                        Общие цена: <?php total_price(); ?> <a href="cart.php" style="color: yellow;">Вернуться на карту</a>
                         <?php
                         if (!isset($_SESSION['customer_email'])) {
                             echo "<a href='checkout.php' style='color: orange;'>Shahsiy kabinet</a>";
