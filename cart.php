@@ -108,7 +108,7 @@ include("functions/functions.php");
                             }
                             ?>
                             <tr align="right">
-                                <td colspan="4"><b>Sub jami:</b></td>
+                                <td style='color: #0056b3;' colspan="4"><b>Sub jami:</b></td>
                                 <td>
                                     <?php echo "$" . $total; ?>
                                 </td>
@@ -118,7 +118,7 @@ include("functions/functions.php");
                                 <td><input type="submit" name="continue" value="Do'konni davom ettirish"></td>
                                 <td>
                                     <button><a href="checkout.php"
-                                               style="text-decoration: none; color: black;">To'lov</a></button>
+                                               style="text-decoration: none; color: #0056b3;">To'lov</a></button>
                                 </td>
                             </tr>
                         </table>
