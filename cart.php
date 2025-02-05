@@ -30,19 +30,19 @@ include("functions/functions.php");
                     <span style="float: right;font-size: 18px;padding: 5px;line-height: 40px;">
                         <?php
                         if (isset($_SESSION['customer_email'])) {
-                            echo "<b>Xush kelibsiz: </b>" . $_SESSION['customer_email'] . "<b style='color: yellow;'> Sizning</b>";
+                            echo "<b>Xush kelibsiz: </b>" . $_SESSION['customer_email'] . "<b style='color: #0056b3;'> Sizning</b>";
                         } else {
                             echo "<b>Xush kelibsiz Mehmon:</b>";
                         }
                         ?>
-                        <b style="color: yellow;">Savatcha-</b> Jami mahsulotlar: <?php total_items(); ?>
+                        <b style="color: #0056b3;">Savatcha-</b> Jami mahsulotlar: <?php total_items(); ?>
                         Jami narx: <?php total_price(); ?>
-                        <a href="index.php" style="color: yellow;">Do'konga qaytish</a>
+                        <a href="index.php" style="color: #0056b3;">Do'konga qaytish</a>
                         <?php
                         if (!isset($_SESSION['customer_email'])) {
-                            echo "<a href='checkout.php' style='color: orange;'>Kirish</a>";
+                            echo "<a href='checkout.php' style='color: #0056b3;'>Kirish</a>";
                         } else {
-                            echo "<a href='logout.php' style='color: orange;'>Chiqish</a>";
+                            echo "<a href='logout.php' style='color: #0056b3;'>Chiqish</a>";
                         }
                         ?>
                     </span>
