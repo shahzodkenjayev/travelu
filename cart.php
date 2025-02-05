@@ -30,9 +30,9 @@ include("functions/functions.php");
                     <span style="float: right;font-size: 18px;padding: 5px;line-height: 40px;">
                         <?php
                         if (isset($_SESSION['customer_email'])) {
-                            echo "<b>Xush kelibsiz: </b>" . $_SESSION['customer_email'] . "<b style='color: #0056b3;'> Sizning</b>";
+                            echo "<b style='color: #0056b3;'>Xush kelibsiz: </b>" . $_SESSION['customer_email'] . "<b style='color: #0056b3;'> Sizning</b>";
                         } else {
-                            echo "<b>Xush kelibsiz Mehmon:</b>";
+                            echo "<b style='color: #0056b3;'>Xush kelibsiz Mehmon:</b>";
                         }
                         ?>
                         <b style="color: #0056b3;">Savatcha-</b> Jami mahsulotlar: <?php total_items(); ?>
